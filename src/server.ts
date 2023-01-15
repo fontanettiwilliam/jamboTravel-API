@@ -1,3 +1,4 @@
+import cors from "cors";
 import * as dotenv from "dotenv";
 import express from "express";
 
@@ -6,6 +7,15 @@ import { cityRouter } from "./modules/city/cityRouter.js";
 dotenv.config();
 
 const server = express();
+
+server.options(
+  "*",
+  cors({ origin: "http://localhost:3000", optionsSuccessStatus: 200 })
+);
+
+server.use(
+  cors({ origin: "http://localhost:3000", optionsSuccessStatus: 200 })
+);
 
 server.use(express.json());
 
