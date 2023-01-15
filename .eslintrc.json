@@ -20,22 +20,13 @@
     "import"
   ],
   "rules": {
-    "indent": [
-      "error",
-      2
-    ],
-    "linebreak-style": [
-      "error",
-      "windows"
-    ],
-    "quotes": [
-      "error",
-      "single"
-    ],
-    "semi": [
-      "error",
-      "always"
-    ],
+    "indent": ["error", 2],
+    "linebreak-style": ["error", "windows"],
+    // "quotes": [
+    //   "error",
+    //   "single"
+    // ],
+    "semi": ["error", "always"],
     "import/extensions": [
       "error",
       "ignorePackages",
@@ -47,16 +38,7 @@
       "warn",
       {
         "newlinesBetween": "always",
-        "groups": [
-          [
-            "module"
-          ],
-          [
-            "parent",
-            "sibling",
-            "index"
-          ]
-        ],
+        "groups": [["module"], ["parent", "sibling", "index"]],
         "alphabetize": {
           "order": "asc",
           "ignoreCase": true
