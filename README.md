@@ -15,6 +15,16 @@ npm run dev
 
 Server will be launched on port 3333!🚀
 
+## FrontEnd
+
+For the FrontEnd see: [Jambo Travel Web](https://github.com/fontanettiwilliam/jamboTravel-Web)
+
+### How the project looks
+
+<h1 align="center">
+<img src="https://github.com/fontanettiwilliam/jamboTravel-Web/blob/main/src/assets/jamboTravel.gif?raw=true" />
+</h1>
+
 ## This project uses
 
 - [Wikipedia API](https://en.wikipedia.org/api/rest_v1/)
