@@ -33,11 +33,11 @@ This project was deployed on [Heroku](https://www.heroku.com/)
 ### getCities
 
 <h1 align="center">
-<!-- <img src="https://github.com/fontanettiwilliam/passing-data-between-components/blob/main/src/assets/project.gif" /> -->
+<img src="https://github.com/fontanettiwilliam/jamboTravel-API/blob/main/src/assets/responseExamples/getCities.png?raw=true" />
 </h1>
 
 ### getWeather
 
 <h1 align="center">
-<!-- <img src="https://github.com/fontanettiwilliam/passing-data-between-components/blob/main/src/assets/project.gif" /> -->
+<img src="https://github.com/fontanettiwilliam/jamboTravel-API/blob/main/src/assets/responseExamples/getWeather.png?raw=true" />
 </h1>
