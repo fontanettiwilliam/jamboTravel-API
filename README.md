@@ -25,3 +25,19 @@ Server will be launched on port 3333!🚀
 - [dotenv](https://github.com/motdotla/dotenv#readme)
 
 ## Deploy on Heroku
+
+This project was deployed on [Heroku](https://www.heroku.com/)
+
+## Examples of Request and Response
+
+### getCities
+
+<h1 align="center">
+<!-- <img src="https://github.com/fontanettiwilliam/passing-data-between-components/blob/main/src/assets/project.gif" /> -->
+</h1>
+
+### getWeather
+
+<h1 align="center">
+<!-- <img src="https://github.com/fontanettiwilliam/passing-data-between-components/blob/main/src/assets/project.gif" /> -->
+</h1>
