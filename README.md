@@ -22,7 +22,7 @@ For the FrontEnd see: [Jambo Travel Web](https://github.com/fontanettiwilliam/ja
 ### How the project looks
 
 <h1 align="center">
-<img src="https://github.com/fontanettiwilliam/jamboTravel-Web/blob/main/src/assets/jamboTravel.gif?raw=true" />
+<img src="https://github.com/fontanettiwilliam/jamboTravel-API/blob/main/src/assets/jamboTravel.gif?raw=true" />
 </h1>
 
 ## This project uses
