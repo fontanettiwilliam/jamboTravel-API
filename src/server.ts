@@ -1,6 +1,9 @@
+import * as dotenv from "dotenv";
 import express from "express";
 
 import { cityRouter } from "./modules/city/cityRouter.js";
+
+dotenv.config();
 
 const server = express();
 
