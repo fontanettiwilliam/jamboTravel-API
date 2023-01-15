@@ -38,6 +38,15 @@ This project was deployed on [Heroku](https://www.heroku.com/)
 
 ### getWeather
 
+You will need to send a lat and long of the desired region (City)
+
+```TS
+{
+  lat: number;
+  long: number;
+}
+```
+
 <h1 align="center">
 <img src="https://github.com/fontanettiwilliam/jamboTravel-API/blob/main/src/assets/responseExamples/getWeather.png?raw=true" />
 </h1>
