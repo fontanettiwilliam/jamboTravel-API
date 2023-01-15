@@ -24,6 +24,11 @@ Server will be launched on port 3333!🚀
 - [Express JS](https://expressjs.com/)
 - [dotenv](https://github.com/motdotla/dotenv#readme)
 
+## Cities List
+
+For the list of cities, this [article](https://www.cnn.com/travel/article/tripadvisor-travelers-choice-awards-2022/index.html) was consulted.
+In the future, a register of cities could be created, or taken from an api that has the most visited cities.
+
 ## Deploy on Heroku
 
 This project was deployed on [Heroku](https://www.heroku.com/)
