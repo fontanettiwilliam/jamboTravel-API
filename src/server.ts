@@ -11,24 +11,31 @@ const server = express();
 server.options(
   "*",
   cors({
-    origin: "https://jambo-travel.vercel.app/",
+    origin: [
+      "https://jambo-travel.vercel.app",
+      "https://jambo-travel-git-main-fontanettiwilliam.vercel.app",
+      "https://jambo-travel-fontanettiwilliam.vercel.app",
+      "*",
+    ],
     optionsSuccessStatus: 200,
   })
 );
 
 server.use(
   cors({
-    origin: "https://jambo-travel.vercel.app/",
+    origin: [
+      "https://jambo-travel.vercel.app",
+      "https://jambo-travel-git-main-fontanettiwilliam.vercel.app",
+      "https://jambo-travel-fontanettiwilliam.vercel.app",
+      "*",
+    ],
     optionsSuccessStatus: 200,
   })
 );
 
 server.use(function (req, res, next) {
   // Website you wish to allow to connect
-  res.setHeader(
-    "Access-Control-Allow-Origin",
-    "https://jambo-travel.vercel.app/"
-  );
+  res.setHeader("Access-Control-Allow-Origin", "*");
 
   // Request methods you wish to allow
   res.setHeader(
