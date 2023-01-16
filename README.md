@@ -1,7 +1,20 @@
+<h1 align="center">
+<img src="https://github.com/fontanettiwilliam/jamboTravel-Web/blob/main/src/assets/Thumbnail.png?raw=true" />
+</h1>
+
 # Jambo Travel - API
 
 <h3>Hello jambo team ;)</h3>
-<p>Welcome to the jambo travel API project</p>
+<p>Welcome to the jambo travel project</p>
+
+## Figma
+
+You can access all of Figma's content by [clicking here](https://www.figma.com/file/VcnzpBRezVwIeFQdACq02B/Jambo-Travel?node-id=10%3A194&t=iKYsJTdHcDRdVS0D-1).
+Heads up! This is a preview link only!
+
+## FrontEnd
+
+For the FrontEnd see: [Jambo Travel Web](https://github.com/fontanettiwilliam/jamboTravel-Web)
 
 ## Getting Started
 
@@ -17,16 +30,6 @@ npm run dev
 ```
 
 Server will be launched on port 3333!🚀
-
-## FrontEnd
-
-For the FrontEnd see: [Jambo Travel Web](https://github.com/fontanettiwilliam/jamboTravel-Web)
-
-### How the project looks
-
-<h1 align="center">
-<img src="https://github.com/fontanettiwilliam/jamboTravel-API/blob/main/src/assets/jamboTravel.gif?raw=true" />
-</h1>
 
 ## This project uses
 
