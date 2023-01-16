@@ -1,7 +1,9 @@
 import { Router } from "express";
 
-import { getCities } from "./cityController.js";
+import { getCities, getWeatherByCity } from "./cityController.js";
 
 export const cityRouter = Router();
 
 cityRouter.get("/getCities", getCities);
+
+cityRouter.post("/getWeather", getWeatherByCity);

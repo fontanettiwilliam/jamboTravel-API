@@ -115,6 +115,19 @@ export const getWeatherByCity = async (
     /**
      * With the Lat and Long received, a request is made to the WeatherAPI
      */
+    const { data: currentWeatherData } = await axios.get<IOpenWeatherResponse>(
+      `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${process.env.OPEN_WEATHER_API_KEY}&units=metric`
+    );
+
+    console.log("currentWeatherData", currentWeatherData);
+
+    if (!currentWeatherData) {
+      throw new Error("ForecastNotFound");
+    }
+
+    const { main: currentForecastInfo, weather: currentWeatherInfo } =
+      currentWeatherData;
+
     const { data: getForecastWeather } =
       await axios.get<IOpenWeatherForecastResponse>(
         `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${long}&appid=${process.env.OPEN_WEATHER_API_KEY}&units=metric`
@@ -123,13 +136,11 @@ export const getWeatherByCity = async (
     const { list } = getForecastWeather;
 
     /**
-     * I get the current date and then look for the object referring to today's date in the returned list
+     * I get the current date and filter the list to avoid the current day
      */
     const currentDate = formatDate(new Date().toString());
 
-    const getCurrentForecast = list.find(
-      (forecast) => formatDate(forecast.dt_txt) === currentDate
-    );
+    console.log("currentDate", currentDate);
 
     /**
      * Then, I create a filter for the list taking the other days for noon
@@ -139,13 +150,6 @@ export const getWeatherByCity = async (
         forecast.dt_txt.includes("12:00") &&
         formatDate(forecast.dt_txt) !== currentDate
     );
-
-    if (!getCurrentForecast) {
-      throw new Error("ForecastNotFound");
-    }
-
-    const { main: currentForecastInfo, weather: currentWeatherInfo } =
-      getCurrentForecast;
 
     /**
      * Format in the object FrontEnd is waiting for
@@ -177,6 +181,8 @@ export const getWeatherByCity = async (
 
     res.json(response);
   } catch (error) {
+    console.log(error);
+
     res
       .status(500)
       .json({ message: "An error occurred while performing action" });

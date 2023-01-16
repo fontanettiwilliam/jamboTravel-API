@@ -5,9 +5,12 @@
 
 ## Getting Started
 
-First, run the development server:
+Before starting to run, please go to the [OpenWeatherApi](https://openweathermap.org/api) website, create an account, generate an API key and then replace it in the .env file
+
+Now you are ready to run the development server:
 
 ```bash
+# First, install
 npm install
 # After the installation is finished run
 npm run dev
@@ -33,6 +36,7 @@ For the FrontEnd see: [Jambo Travel Web](https://github.com/fontanettiwilliam/ja
 - [axios](https://axios-http.com/)
 - [Express JS](https://expressjs.com/)
 - [dotenv](https://github.com/motdotla/dotenv#readme)
+- [cors](https://www.npmjs.com/package/cors)
 
 ## Cities List
 
