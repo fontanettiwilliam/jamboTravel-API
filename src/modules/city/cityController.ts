@@ -59,6 +59,7 @@ interface IGetWeatherByCityReqBody {
 
 // TODO - In the future, a register of cities could be created, or taken from an api that has the most visited cities
 const citiesNames = [
+  "Calgary",
   "Dubai",
   "London",
   "Cancún",
