@@ -119,8 +119,6 @@ export const getWeatherByCity = async (
       `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${process.env.OPEN_WEATHER_API_KEY}&units=metric`
     );
 
-    console.log("currentWeatherData", currentWeatherData);
-
     if (!currentWeatherData) {
       throw new Error("ForecastNotFound");
     }
@@ -139,8 +137,6 @@ export const getWeatherByCity = async (
      * I get the current date and filter the list to avoid the current day
      */
     const currentDate = formatDate(new Date().toString());
-
-    console.log("currentDate", currentDate);
 
     /**
      * Then, I create a filter for the list taking the other days for noon
@@ -181,8 +177,6 @@ export const getWeatherByCity = async (
 
     res.json(response);
   } catch (error) {
-    console.log(error);
-
     res
       .status(500)
       .json({ message: "An error occurred while performing action" });
