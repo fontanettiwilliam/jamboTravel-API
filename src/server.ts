@@ -10,12 +10,10 @@ const server = express();
 
 server.options(
   "*",
-  cors({ origin: "http://localhost:3000", optionsSuccessStatus: 200 })
+  cors({ origin: process.env.WEB_URL, optionsSuccessStatus: 200 })
 );
 
-server.use(
-  cors({ origin: "http://localhost:3000", optionsSuccessStatus: 200 })
-);
+server.use(cors({ origin: process.env.WEB_URL, optionsSuccessStatus: 200 }));
 
 server.use(express.json());
 

@@ -12,13 +12,22 @@
 You can access all of Figma's content by [clicking here](https://www.figma.com/file/VcnzpBRezVwIeFQdACq02B/Jambo-Travel?node-id=10%3A194&t=iKYsJTdHcDRdVS0D-1).
 Heads up! This is a preview link only!
 
+## Deploy on Vercel
+
+To see the published website, [click here](https://jambo-travel.vercel.app/)
+
 ## FrontEnd
 
 For the FrontEnd see: [Jambo Travel Web](https://github.com/fontanettiwilliam/jamboTravel-Web)
 
 ## Getting Started
 
-Before starting to run, please go to the [OpenWeatherApi](https://openweathermap.org/api) website, create an account, generate an API key and then replace it in the .env file
+Before starting to run, please go to the [OpenWeatherApi](https://openweathermap.org/api) website, create an account, generate an API key and then replace it in the .env file. Also, replace your FrontEnd URL
+
+```env
+OPEN_WEATHER_API_KEY=YOUR_KEY
+WEB_URL=YOUR_FRONT_END_URL
+```
 
 Now you are ready to run the development server:
 
